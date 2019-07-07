@@ -74,6 +74,8 @@ def install(prompt_on_overwrite=False):
     m["gitconfig"] = "~/.gitconfig"
     m["hexchat-colors.conf"] = "~/.config/hexchat/colors.conf"
     m["subl-preferences.json"] = "~/.config/sublime-text-3/Packages/User/Preferences.sublime-settings"
+    m["vimrc"] = "~/.vimrc"
+    m["vimrc-bepo"] = "~/.vim/bepo-mapping"
 
     for src, dst in m.items():
         install_link(src, dst, prompt_on_overwrite)
