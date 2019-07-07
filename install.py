@@ -71,6 +71,7 @@ def install(prompt_on_overwrite=False):
 
     # Git
     m["gitconfig"] = "~/.gitconfig"
+    m["cgvgrc"] = "~/.cgvgrc"
 
     for src, dst in m.items():
         install_link(src, dst, prompt_on_overwrite)
