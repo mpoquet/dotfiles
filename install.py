@@ -71,6 +71,7 @@ def install(prompt_on_overwrite=False):
 
     m["cgvgrc"] = "~/.cgvgrc"
     m["gitconfig"] = "~/.gitconfig"
+    m["hexchat-colors.conf"] = "~/.config/hexchat/colors.conf"
     m["subl-preferences.json"] = "~/.config/sublime-text-3/Packages/User/Preferences.sublime-settings"
 
     for src, dst in m.items():
