@@ -16,6 +16,7 @@ import docopt
 import logging
 import os
 import sys
+from shutil import copyfile
 
 def query_yes_no(question, default="yes"):
     """Ask a yes/no question via input() and return their answer.
@@ -67,8 +68,8 @@ def main():
     install(prompt_on_overwrite)
 
 def install(prompt_on_overwrite=False):
+    # Links
     m = dict()
-
     m["cgvgrc"] = "~/.cgvgrc"
     m["gitconfig"] = "~/.gitconfig"
     m["hexchat-colors.conf"] = "~/.config/hexchat/colors.conf"
@@ -77,7 +78,14 @@ def install(prompt_on_overwrite=False):
     for src, dst in m.items():
         install_link(src, dst, prompt_on_overwrite)
 
-def install_link(src, dst, prompt_on_overwrite=False):
+    # Copies
+    m = dict()
+    m["llpp.conf"] = "~/.config/llpp.conf"
+
+    for src, dst in m.items():
+        install_link(src, dst, prompt_on_overwrite, True)
+
+def install_link(src, dst, prompt_on_overwrite=False, copy=False):
     dst = os.path.expanduser(dst)
 
     # Create destination directory if needed.
@@ -98,8 +106,12 @@ def install_link(src, dst, prompt_on_overwrite=False):
     dst = os.path.realpath(dst)
     logging.info(f'{src} -> {dst}')
 
-    logging.debug(f"Symlinking {src} -> {dst}")
-    os.symlink(src, dst)
+    if copy:
+        logging.debug(f"Copying {src} -> {dst}")
+        copyfile(src, dst)
+    else:
+        logging.debug(f"Symlinking {src} -> {dst}")
+        os.symlink(src, dst)
 
 if __name__ == '__main__':
     main()
