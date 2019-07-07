@@ -69,9 +69,9 @@ def main():
 def install(prompt_on_overwrite=False):
     m = dict()
 
-    # Git
-    m["gitconfig"] = "~/.gitconfig"
     m["cgvgrc"] = "~/.cgvgrc"
+    m["gitconfig"] = "~/.gitconfig"
+    m["subl-preferences.json"] = "~/.config/sublime-text-3/Packages/User/Preferences.sublime-settings"
 
     for src, dst in m.items():
         install_link(src, dst, prompt_on_overwrite)
