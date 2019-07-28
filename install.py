@@ -8,7 +8,7 @@ Usage:
 
 Options:
   -h --help             Show this screen.
-  -n --no-interactive   Prompt before overwrite.
+  -n --no-interactive   Do NOT prompt before overwrite.
   -q --quiet            Decrease verbosity.
   --debug               Increase verbosity.
 """
@@ -74,6 +74,7 @@ def install(prompt_on_overwrite=False):
     m["gitconfig"] = "~/.gitconfig"
     m["hexchat-colors.conf"] = "~/.config/hexchat/colors.conf"
     m["subl-preferences.json"] = "~/.config/sublime-text-3/Packages/User/Preferences.sublime-settings"
+    m["user-dirs.dirs"] = "~/.config/user-dirs.dirs"
     m["vimrc"] = "~/.vimrc"
     m["vimrc-bepo"] = "~/.vim/bepo-mapping"
 
