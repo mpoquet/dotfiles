@@ -13,5 +13,6 @@
 		80,
 		100
 	],
-	"theme": "Afterglow-blue.sublime-theme"
+	"theme": "Afterglow-blue.sublime-theme",
+	"translate_tabs_to_spaces": true
 }

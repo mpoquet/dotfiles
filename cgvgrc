@@ -1,3 +1,4 @@
 SEARCH=(.*)
 EXCLUDE=(\.git|tags|\.tags)
 COLOR1=red
+EDITOR=subl
