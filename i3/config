@@ -43,7 +43,7 @@ bindcode $mod+40 exec dmenu_run -fn 'Droid Sans Mono-12'
 
 # lock the screen
 #            +p
-bindcode $mod+33 exec i3lock -c 262c3a -etd -i ~/img/lock.png
+bindcode $mod+33 exec i3lock -c 262c3a -et -i ~/img/lock
 
 # Set workspaces to monitors
 # 2 monitors setup
@@ -271,5 +271,5 @@ exec --no-startup-id mattermost-desktop
 exec --no-startup-id signal-desktop
 
 
-exec_always --no-startup-id "feh --bg-center ~/img/wallpaper.png"
+exec_always --no-startup-id "feh --bg-center ~/img/wallpaper"
 exec_always --no-startup-id "~/.screenlayout/three.sh"
