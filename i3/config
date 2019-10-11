@@ -27,11 +27,11 @@ font pango:monospace 11
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec sakura -d "`xcwd`"
-bindsym $mod+Shift+Return exec "sakura"
+bindsym $mod+Return exec kitty -d "`xcwd`"
+bindsym $mod+Shift+Return exec "kitty"
 #             w
-bindcode $mod+52 exec sakura -d "`xcwd`"
-bindcode $mod+Shift+52 exec "sakura"
+bindcode $mod+52 exec kitty -d "`xcwd`"
+bindcode $mod+Shift+52 exec "kitty"
 
 # kill focused window
 #         alt+F4
@@ -263,7 +263,7 @@ exec --no-startup-id pa-applet
 # exec --no-startup-id redshift-gtk -l48.117:-1.678
 # exec --no-startup-id pidgin
 # Windows
-exec --no-startup-id "i3-msg 'workspace 1; exec sakura'"
+exec --no-startup-id "i3-msg 'workspace 1; exec kitty'"
 exec --no-startup-id subl
 exec --no-startup-id telegram-desktop
 exec --no-startup-id hexchat
