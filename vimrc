@@ -1,5 +1,5 @@
-if !empty(system("setxkbmap -print|grep bepo"))
-    source ~/.vim/bepo-mapping
-endif
+" if !empty(system("setxkbmap -print|grep bepo"))
+"    source ~/.vim/bepo-mapping
+" endif
 
 syntax on
