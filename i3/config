@@ -223,7 +223,7 @@ bindsym $mod+XF86MonBrightnessUp exec --no-startup-id "brightness set 1%+"
 
 # keyboard layouts
 # 45:K
-bindcode $mod+45 exec --no-startup-id LAYOUTS=$'fr\nfr bepo\nus' dmenu-setxkbmap -fn 'Droid Sans Mono-12'
+bindcode $mod+45 exec --no-startup-id LAYOUTS=$'fr\nbepo-mpoquet\nus' dmenu-setxkbmap -fn 'Droid Sans Mono-12'
 
 # scrot & gimp - root
 bindsym Print exec --no-startup-id "scrot -e 'mv $f /tmp/ && gimp /tmp/$f'"
