@@ -70,6 +70,7 @@ def main():
 def install(prompt_on_overwrite=False):
     # Links
     m = dict()
+    m["batconfig"] = "~/.config/bat/config"
     m["cgvgrc"] = "~/.cgvgrc"
     m["gitconfig"] = "~/.gitconfig"
     m["hexchat-colors.conf"] = "~/.config/hexchat/colors.conf"
