@@ -79,6 +79,7 @@ def install(prompt_on_overwrite=False):
     m["kitty/kitty.conf"] = "~/.config/kitty/kitty.conf"
     m["kitty/theme-dark.conf"] = "~/.config/kitty/theme-dark.conf"
     m["kitty/theme-light.conf"] = "~/.config/kitty/theme-light.conf"
+    m["starship.toml"] = "~/.config/starship.toml"
     m["subl-preferences.json"] = "~/.config/sublime-text-3/Packages/User/Preferences.sublime-settings"
     m["taskopenrc"] = "~/.taskopenrc"
     m["taskrc"] = "~/.taskrc"

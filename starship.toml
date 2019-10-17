@@ -1,0 +1,16 @@
+add_newline = false
+
+[line_break]
+disabled = true
+
+[directory]
+truncation_length = 6
+truncate_to_repo = false
+
+[character]
+error_symbol = "FAIL ❯"
+use_symbol_for_status = true
+
+[nix_shell]
+use_name = true
+style = "bold green"
