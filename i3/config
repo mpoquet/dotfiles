@@ -272,4 +272,4 @@ exec --no-startup-id signal-desktop
 
 
 exec_always --no-startup-id "feh --bg-center ~/img/wallpaper"
-exec_always --no-startup-id "~/.screenlayout/three.sh"
+exec_always --no-startup-id "~/.screenlayout/default-or-laptop-only.sh"
