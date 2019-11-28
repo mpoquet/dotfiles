@@ -199,6 +199,9 @@ bar {
         urgent_workspace   #1D1D19 #1D1D19 #FF6F6B
         binding_mode       #1D1D19 #1D1D19 #FF6F6B
     }
+    # disable wheel scrolling
+    bindsym button4 nop
+    bindsym button5 nop
 }
 
 # Colors
