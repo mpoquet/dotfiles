@@ -148,9 +148,9 @@ bindcode $mod+42 exec "PASSWORD_STORE_CLIP_TIME=10 passmenu -fn 'Droid Sans Mono
 
 # Automatic xrandr setup
 #                  +t
-bindcode $mod+Shift+28 exec --no-startup-id "~/.screenlayout/default.sh && feh --bg-center ~/img/wallpaper.png"
+bindcode $mod+Shift+28 exec --no-startup-id "~/.screenlayout/default.sh && feh --bg-center ~/img/wallpaper"
 #                  +y
-bindcode $mod+Shift+29 exec --no-startup-id "~/.screenlayout/laptop-only.sh && feh --bg-center ~/img/wallpaper.png"
+bindcode $mod+Shift+29 exec --no-startup-id "~/.screenlayout/laptop-only.sh && feh --bg-center ~/img/wallpaper"
 
 # exit i3 (logs you out of your X session)
 #                  +e
