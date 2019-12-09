@@ -23,6 +23,9 @@ font pango:monospace 11
 # X core fonts rendering does not support right-to-left and this being a bitmap
 # font, it doesn’t scale on retina/hidpi displays.
 
+# convenient modifier shortcuts on bépo
+#bindcode Control+52 exec xvkbd -xsendevent -text "\Cw"
+
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
