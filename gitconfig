@@ -11,3 +11,5 @@
     ff = only
 [pager]
 	branch = false
+[diff]
+    tool = meld
