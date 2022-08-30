@@ -183,6 +183,9 @@ bindcode $mod+27 mode "resize"
 #           +x
 bindcode $mod+53 exec --no-startup-id "/home/carni/proj/linux-survival-scripts/dmenu-xrandr.bash -fn 'Droid Sans Mono-12'"
 
+#            +i
+bindcode $mod+31 exec --no-startup-id "rofimoji --action copy"
+
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 
@@ -245,6 +248,7 @@ assign [class="^Subl$"] 3
 assign [class="^sublime_text$"] 3
 assign [class="^Sublime_text$"] 3
 assign [class="^QtCreator$"] 3
+assign [class="^Code$"] 3
 #assign [class="^Firefox$"] 4
 assign [class="^Skype$"] 8
 assign [class="^Pidgin$"] 8
@@ -270,7 +274,7 @@ exec --no-startup-id pa-applet
 # exec --no-startup-id pidgin
 # Windows
 exec --no-startup-id "i3-msg 'workspace 1; exec kitty'"
-exec --no-startup-id subl
+exec --no-startup-id code
 exec --no-startup-id telegram-desktop
 exec --no-startup-id hexchat
 exec --no-startup-id mattermost-desktop
