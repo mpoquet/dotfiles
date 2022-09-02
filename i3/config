@@ -52,16 +52,14 @@ bindcode $mod+33 exec i3lock -c 262c3a -et -i ~/img/lock
 # 2 monitors setup
 workspace 1 output eDP-1
 workspace 2 output eDP-1
-
 workspace 3 output DP-1-1
 workspace 4 output DP-1-1
 workspace 5 output DP-1-1
 workspace 6 output DP-1-1
 workspace 7 output DP-1-1
-
-workspace 8 output DP-1-3
-workspace 9 output DP-1-3
-workspace 10 output DP-1-3
+workspace 8 output HDMI-1
+workspace 9 output HDMI-1
+workspace 10 output HDMI-1
 
 # change focus
 bindsym $mod+Left focus left
@@ -151,7 +149,7 @@ bindcode $mod+42 exec "PASSWORD_STORE_CLIP_TIME=10 passmenu -fn 'Droid Sans Mono
 
 # Automatic xrandr setup
 #                  +t
-bindcode $mod+Shift+28 exec --no-startup-id "~/.screenlayout/default.sh && feh --bg-center ~/img/wallpaper"
+bindcode $mod+Shift+28 exec --no-startup-id "~/.screenlayout/irit-3-screens.bash.sh && feh --bg-center ~/img/wallpaper"
 #                  +y
 bindcode $mod+Shift+29 exec --no-startup-id "~/.screenlayout/laptop-only.sh && feh --bg-center ~/img/wallpaper"
 
@@ -254,6 +252,7 @@ assign [class="^Skype$"] 8
 assign [class="^Pidgin$"] 8
 assign [class="^Thunderbird$"] 8
 assign [class="^TelegramDesktop$"] 8
+assign [class="^discord$"] 8
 assign [class="^Signal$"] 8
 assign [class="^Mattermost$"] 8
 assign [class="^Hexchat$"] 8
@@ -278,7 +277,9 @@ exec --no-startup-id code
 exec --no-startup-id telegram-desktop
 exec --no-startup-id hexchat
 exec --no-startup-id mattermost-desktop
+exec --no-startup-id discord
 exec --no-startup-id signal-desktop
+exec --no-startup-id thunderbird
 
 
 exec_always --no-startup-id "feh --bg-center ~/img/wallpaper"
