@@ -13,3 +13,5 @@
 	branch = false
 [diff]
     tool = meld
+[init]
+	defaultBranch = main
